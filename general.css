@@ -1,0 +1,109 @@
+body {
+    background-image: url('ADFG.avif'); /* Added background image */
+    position: relative; 
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .content {
+        margin-left: 10px; 
+        padding: 20px; 
+    }
+
+    .sidebar {
+        width: 100%; 
+        height: auto; 
+        position: relative; 
+    }
+
+    .sidebar button {
+        width: 100%; 
+        margin: 5px 0; 
+    }
+
+    img {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+.mask {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+} 
+.content {
+    margin-left: 220px;
+    padding: 40px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow for more depth */
+    font-size: 16px; /* Increased font size for readability */
+    line-height: 1.5; /* Improved line height for better text flow */
+}
+
+.sidebar {
+    width: 200px;
+    margin-right: 20px; /* Added margin to the right side for the sidebar */
+    height: 100vh;
+    background-image: url('EUHQ3.jpg');
+    background-size: cover; /* Ensure the image covers the entire sidebar */
+    background-position: center; /* Center the image */
+    background-color: grey; /* Fallback color */
+    padding: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the buttons vertically */
+    align-items: center; /* Center the buttons horizontally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+.sidebar button {
+    display: block;
+    width: 80%; 
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 100px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.sidebar button:hover {
+    background-color: #0056b3;
+    padding: 10px; /* Maintain consistent padding */
+}
+
+.contact3 {
+    background-color: rgb(239, 64, 0);
+    border: 3px solid black;
+    border-radius: 15px; /* Added round border */
+    padding: 10px; /* Added padding for spacing */
+    color: white; /* Text color for better contrast */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center the images */
+    flex-wrap: wrap;
+}
+
+.twe {
+    display: block;
+    margin: 0 auto; /* Center the image */
+}

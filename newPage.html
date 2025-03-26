@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="general.css">
+    <title>New Page</title>
+</head>
+<body>
+    <div class="sidebar">
+        
+        <img src="logo-ec--en.svg" alt="Logo" style="width: 100%; height: auto; margin-bottom: 20px;">
+        <button onclick="showContent('home')">Home</button>
+        <button onclick="showContent('about')">About</button>
+        <button onclick="showContent('services')">How to enter</button>
+        <button onclick="showContent('portfolio')">More projects</button>
+        <button onclick="showContent('contactUs')">Contact me</button>
+    </div>
+    <div class="content" id="content">
+        <h1>Welcome to the New Page</h1>
+        <p>Select a button to see the content here.</p>
+    </div>
+    <script>
+        window.onload = function() {
+            showContent('welcome'); // Open on 'welcome'
+        };
+
+        function showContent(page) {
+            const contentDiv = document.getElementById('content');
+            switch(page) {
+                case 'home':
+                    contentDiv.innerHTML = `
+                        <div class="content-box">
+                            <h2>Introducere în Erasmus+</h2>
+                            <p><strong>Erasmus+</strong> este programul Uniunii Europene pentru educație, formare, tineret și sport, oferind oportunități de mobilitate și colaborare internațională. Lansat în 2014, acesta sprijină studenți, profesori, lucrători de tineret și organizații pentru a dezvolta competențe, a promova incluziunea și a îmbunătăți sistemele de educație și formare. Programul încurajează schimburile culturale, inovarea și cooperarea europeană, contribuind la o societate mai conectată și pregătită pentru viitor.</p>
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/EL4mPrWbKxM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="videoyou" allowfullscreen></iframe>
+                        </div>
+                        </div>
+                    `;
+                    break;
+                case 'about':
+                    contentDiv.innerHTML = `
+                    <h1> About </h1>
+                        <p>
+                            Colegiul Național Militar „Tudor Vladimirescu” din Craiova participă activ la programul Erasmus+, implementând diverse proiecte menite să îmbunătățească procesul educațional și să dezvolte competențele elevilor și cadrelor didactice. Aceste proiecte sunt concepute pentru a oferi elevilor oportunități de învățare internațională, dezvoltare personală și profesională, precum și pentru a promova schimburile culturale.
+                        </p>
+                        <p>
+                            Prin participarea la programul Erasmus+, elevii au ocazia să colaboreze cu colegi din alte țări, să își îmbunătățească abilitățile lingvistice și să dobândească experiențe valoroase care le vor fi utile în carierele lor viitoare.
+                        </p>
+                        <a href="https://cnmtv.mapn.ro/pages/erasmus" style="display: inline; margin-left: 10px;">Apasa aici</a>
+                        <div style="margin-top: 20px;">
+                        <div class="image-container">
+                            <img src="sitting-writing-women-brainstorming-subject-participation.jpg" alt="Sitting Writing Women" style="width: 250px; height: auto; margin-right: 10px;">
+                            <img src="young-people-with-city-map.jpg" alt="Young People with City Map" style="width: 250px; height: auto; margin-right: 10px;">
+                            <img src="8848686.jpg" alt="Image 8848686" style="width: 250px; height: auto;">
+                        </div>
+                        </div>
+                    `;
+                    break;
+                case 'services':
+                    contentDiv.innerHTML = `
+                        <h2>How to enter</h2>
+                        <p>Pentru a participa la un proiect Erasmus+ la Colegiul Național Militar "Tudor Vladimirescu" (CNMTV), urmați acești pași:</p>
+                        <ul>
+                            <li>Verificați eligibilitatea: Elevii specializării Matematică-Informatică interesați de noile tehnologii în cariera militară sunt încurajați să aplice.</li>
+                            <li>Depuneți dosarul de candidatură: Completați cererea de participare și includeți documentele necesare, conform cerințelor CNMTV.</li>
+                            <li>Participați la procesul de selecție: Evaluarea dosarelor se bazează pe criterii precum performanța academică, participarea anterioară la proiecte Erasmus și situația socio-economică.</li>
+                            <li>Obțineți acordul parental: Este necesar consimțământul părinților pentru participarea la proiect.</li>
+                        </ul>
+                        <p>Pentru detalii suplimentare, consultați anunțurile oficiale ale CNMTV.</p>
+                        <p>Mai multe informații pot fi găsite <a href="https://cnmtv.mapn.ro/pages/erasmus">aici</a>.</p>
+                    `;
+                    break;
+                case 'portfolio':
+                    contentDiv.innerHTML = `
+                        <h2>More projects</h2>
+                        <p>Proiecte Erasmus+ implementate:</p>
+                        <ul>
+                            <li>„Inteligența Artificială, Motivație și Accesibilitate în Școlile Militare”: Acest proiect, cu numărul de referință 2022-1-RO01-KA122-SCH-000075668, are ca scop dezvoltarea competențelor cadrelor didactice și ale elevilor în utilizarea inteligenței artificiale. Activitățile includ cursuri despre aplicațiile practice ale inteligenței artificiale în educație, programarea roboților și strategii de motivare a elevilor.</li>
+                            <li>„Școlile Militare, Școli Sustenabile pentru Viitor!”: Implementat între 1 decembrie 2023 și 31 mai 2025, acest proiect urmărește formarea și dezvoltarea competențelor elevilor în domeniul protecției mediului și economiei circulare. De asemenea, vizează inițierea cadrelor didactice în domeniul dezvoltării durabile și cetățeniei active.</li>
+                            <li>Acreditarea Erasmus+ în Domeniul Educației Școlare (2024-2027): Acreditarea oferă colegiului acces simplificat la finanțările aferente Acțiunii-cheie 1, facilitând dezvoltarea profesională integrată a elevilor și profesorilor în domenii precum leadership, gândire critică și integrarea tehnologiilor avansate în procesul educațional.</li>
+                            <li>„Transformarea Educației Militare prin Competențe Informatice Avansate”: Acest proiect VET (Formare Profesională), cu numărul de referință 2024-1-RO01-KA122-VET-000217671, se desfășoară între 1 octombrie 2024 și 31 decembrie 2025. Scopul său este dezvoltarea competențelor informatice avansate ale elevilor, pregătindu-i pentru integrarea în structurile militare moderne.</li>
+                        </ul>
+                        <p>Mai multe informații pot fi găsite <a href="https://cnmtv.mapn.ro/pages/erasmus">aici</a>.</p>
+                        <img src="erasmus.jpg" alt="erasnus imagine" style="width: 400px; height: auto;" class="twe">
+                    `;
+                    break;
+                case 'contactUs':
+                    contentDiv.innerHTML = '<h2>Contact Us</h2><p>Phone number: +40747467178</p> <p>Address: Suceava , Romania</p> <p>Email:ppojalex@gmail.com</p>';
+                    break;
+                default:
+                    contentDiv.innerHTML = '<h2>Welcome</h2><p>Select a button to see the content here.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
