@@ -81,7 +81,7 @@ body {
 
 .sidebar button:hover {
     background-color: #0056b3;
-    padding: 10px; /* Maintain consistent padding */
+    padding: 15px; /* Increased padding on hover */
 }
 
 .contact3 {
