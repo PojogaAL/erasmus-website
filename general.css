@@ -10,6 +10,7 @@ body {
     .content {
         margin-left: 10px; 
         padding: 20px; 
+        width: calc(100% - 20px); /* Full width for mobile */
     }
 
     .sidebar {
@@ -24,7 +25,7 @@ body {
     }
 
     img {
-        width: 100%; 
+        max-width: 100%; /* Ensure images do not exceed their container */
         height: auto; 
     }
 }
@@ -38,7 +39,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5); 
 } 
 .content {
-    margin-left: 220px;
+    margin-left: 220px; /* Maintain margin for larger screens */
     padding: 40px;
     background-color: #f9f9f9; 
     border: 1px solid #ddd; 
@@ -49,7 +50,7 @@ body {
 }
 
 .sidebar {
-    width: 200px;
+    width: 200px; /* Adjusted width for larger screens */
     margin-right: 20px; /* Added margin to the right side for the sidebar */
     height: 100vh;
     background-image: url('EUHQ3.jpg');
